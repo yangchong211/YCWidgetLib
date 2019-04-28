@@ -34,6 +34,8 @@
     ```
 - 如何切换展开和折叠
     ```
+    //初始化操作
+    expand.initExpand(false ,mHeight);
     //设置动画时间
     expand.setAnimationDuration(300);
     //折叠或者展开操作后的监听
