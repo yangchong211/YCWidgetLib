@@ -15,11 +15,10 @@
         android:id="@+id/expand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/tv"
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/flow_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。"/>
+            android:layout_height="wrap_content"/>
     </com.ycbjie.expandlib.ExpandLayout>
 
     <LinearLayout

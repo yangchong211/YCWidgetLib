@@ -66,7 +66,7 @@ public class TextExpandActivity3 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_text_expand);
+        setContentView(R.layout.activity_text_expand3);
 
         initView();
         initListener();
