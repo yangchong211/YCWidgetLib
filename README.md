@@ -18,6 +18,8 @@
 - ![image](https://github.com/yangchong211/YCExpandView/blob/master/image/expand1.gif)
 - ![image](https://github.com/yangchong211/YCExpandView/blob/master/image/expand2.gif)
 
+
+
 ### 03.如何使用
 - 设置文本控件
     ```
