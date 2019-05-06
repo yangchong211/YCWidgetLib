@@ -255,6 +255,11 @@ public class ExpandLayout extends LinearLayout {
     }
 
     private OnToggleExpandListener listener;
+
+    /**
+     * 设置折叠和展开的监听listener事件
+     * @param listener                  listener
+     */
     public void setOnToggleExpandListener(OnToggleExpandListener listener){
         this.listener = listener;
     }
