@@ -15,8 +15,8 @@
 
 
 ### 02.效果展示
-- ![image](https://github.com/yangchong211/YCExpandView/blob/master/image/expand1.gif)
-- ![image](https://github.com/yangchong211/YCExpandView/blob/master/image/expand2.gif)
+- ![expand1.gif](https://upload-images.jianshu.io/upload_images/4432347-92b56b4b5c1d67e2.gif?imageMogr2/auto-orient/strip)
+- ![expand2.gif](https://upload-images.jianshu.io/upload_images/4432347-4a0c800016ae563d.gif?imageMogr2/auto-orient/strip)
 
 
 
