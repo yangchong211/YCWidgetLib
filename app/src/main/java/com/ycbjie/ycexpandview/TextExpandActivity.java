@@ -36,14 +36,14 @@ public class TextExpandActivity extends AppCompatActivity {
             super.handleMessage(msg);
             switch (msg.what){
                 case TAG_LAYOUT_FINISH:
-                    //这个是两行的高度，实际开发中看UI设置的高度，这里仅仅是假设操作
+                    //这个是三行的高度，实际开发中看UI设置的高度，这里仅仅是假设操作
                     twoLineTagHeight = dip2px(TextExpandActivity.this, 54.0f);
                     if (measuredHeight> twoLineTagHeight){
-                        //如果大于两行，则显示折叠
+                        //如果大于三行，则显示折叠
                         llTagBtn.setVisibility(View.VISIBLE);
                         expand.initExpand(false ,twoLineTagHeight);
                     }else {
-                        //如果小于或者等于两行，则不显示折叠控件
+                        //如果小于或者等于三行，则不显示折叠控件
                         llTagBtn.setVisibility(View.GONE);
                     }
                     break;
