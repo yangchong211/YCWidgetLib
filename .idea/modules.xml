@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ExpandLib/ExpandLib.iml" filepath="$PROJECT_DIR$/ExpandLib/ExpandLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/YCExpandView.iml" filepath="$PROJECT_DIR$/.idea/YCExpandView.iml" />
       <module fileurl="file://$PROJECT_DIR$/YCExpandView.iml" filepath="$PROJECT_DIR$/YCExpandView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

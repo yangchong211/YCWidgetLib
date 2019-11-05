@@ -21,6 +21,10 @@
 
 
 ### 03.如何使用
+- **如何引用**
+    ```
+     implementation 'cn.yc:ExpandLib:1.0.0'
+    ```
 - 设置文本控件
     ```
     <com.ycbjie.expandlib.ExpandLayout
