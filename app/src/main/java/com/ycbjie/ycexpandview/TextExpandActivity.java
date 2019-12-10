@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.ycbjie.expandlib.ExpandLayout;
+import com.ycbjie.expandlib.FolderTextView;
 import com.ycbjie.expandlib.LogUtils;
 
 /**
@@ -78,6 +79,13 @@ public class TextExpandActivity extends AppCompatActivity {
         tv = findViewById(R.id.tv);
         llTagBtn = findViewById(R.id.ll_tag_btn);
         ivExpand = findViewById(R.id.iv_expand);
+
+
+        FolderTextView tv_view = findViewById(R.id.tv_view);
+        tv_view.setFoldLine(3);
+        tv_view.setFoldText("收起文本");
+        tv_view.setUnfoldText("查看详情");
+        tv_view.setLinkColor(getResources().getColor(R.color.colorPrimary));
     }
 
 

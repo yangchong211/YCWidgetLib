@@ -23,8 +23,10 @@
 ### 03.如何使用
 - **如何引用**
     ```
-     implementation 'cn.yc:ExpandLib:1.0.0'
+     implementation 'cn.yc:ExpandLib:1.0.1'
     ```
+
+#### 3.1 使用万能伸展折叠控件
 - 设置文本控件
     ```
     <com.ycbjie.expandlib.ExpandLayout
@@ -66,6 +68,27 @@
     expand.toggleExpand();
     ```
 
+#### 3.2 使用自定义折叠文本
+- 设置文本控件
+    ```
+    <com.ycbjie.expandlib.FolderTextView
+        android:id="@+id/tv_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    ```
+- 属性设置
+    ```
+    //设置折叠行数
+    tv_view.setFoldLine(3);
+    //设置展开时的link文本
+    tv_view.setFoldText("收起文本");
+    //设置收缩时link文本
+    tv_view.setUnfoldText("查看详情");
+    //设置link的颜色
+    tv_view.setLinkColor(getResources().getColor(R.color.colorPrimary));
+    ```
+
 
 ### 04.注意要点
 
@@ -76,6 +99,7 @@
 - 2.当控件销毁后，在onDetachedFromWindow方法中，手动销毁动画
 - 3.针对折叠和伸展状态之间切换，如果动画在执行中，即使调用多次toggleExpand()方法，避免频繁调用collapse或者expand
 - 4.如果开发者使用该折叠控件时，设置折叠时的高度为0，则会抛出异常
+- 5.针对自定义折叠文本，仅仅用一个TextView即可搞定，充分利用SpannableString的功能即可实现你的需求
 
 
 
@@ -91,7 +115,6 @@
 
 
 #### 02.关于我的博客
-- 我的个人站点：www.yczbj.org，www.ycbjie.cn
 - github：https://github.com/yangchong211
 - 知乎：https://www.zhihu.com/people/yczbj/activities
 - 简书：http://www.jianshu.com/u/b7b2c6ed9284

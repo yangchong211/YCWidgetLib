@@ -19,7 +19,6 @@
             android:id="@+id/tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
             android:text="我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。"/>
     </com.ycbjie.expandlib.ExpandLayout>
 
@@ -38,6 +37,12 @@
     </LinearLayout>
 
 
+
+    <com.ycbjie.expandlib.FolderTextView
+        android:id="@+id/tv_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。"/>
 
 
 </LinearLayout>
