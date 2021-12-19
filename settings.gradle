@@ -1,1 +1,2 @@
 include ':app', ':ExpandLib'
+include ':ExpandPager'

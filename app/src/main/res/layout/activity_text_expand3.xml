@@ -11,7 +11,7 @@
 
 
 
-    <com.ycbjie.expandlib.ExpandLayout
+    <com.yc.expandlib.ExpandLayout
         android:id="@+id/expand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -19,7 +19,7 @@
             android:id="@+id/flow_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-    </com.ycbjie.expandlib.ExpandLayout>
+    </com.yc.expandlib.ExpandLayout>
 
     <LinearLayout
         android:id="@+id/ll_tag_btn"

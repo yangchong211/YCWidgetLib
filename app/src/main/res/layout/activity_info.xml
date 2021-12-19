@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_height="250dp"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@mipmap/p1"
+                android:transitionName="@string/transition_image"/>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:text="NORTH LAT 36"
+                    android:textColor="@android:color/white"/>
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_circle"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:text="EAST LNG 97"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/bg_map"/>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    tools:text="La Crescenta-Montrose,CA91020"/>
+
+                <ImageView
+                    android:layout_below="@+id/title"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_stars"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

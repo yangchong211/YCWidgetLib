@@ -11,7 +11,7 @@
 
 
 
-    <com.ycbjie.expandlib.ExpandLayout
+    <com.yc.expandlib.ExpandLayout
         android:id="@+id/expand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。我是小杨逗比，网名潇湘剑雨。"/>
-    </com.ycbjie.expandlib.ExpandLayout>
+    </com.yc.expandlib.ExpandLayout>
 
     <LinearLayout
         android:id="@+id/ll_tag_btn"
@@ -38,7 +38,7 @@
 
 
 
-    <com.ycbjie.expandlib.FolderTextView
+    <com.yc.expandlib.FolderTextView
         android:id="@+id/tv_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

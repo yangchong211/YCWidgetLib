@@ -11,7 +11,7 @@
 
 
 
-    <com.ycbjie.expandlib.ExpandLayout
+    <com.yc.expandlib.ExpandLayout
         android:id="@+id/expand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果文本控件折叠效果"/>
-    </com.ycbjie.expandlib.ExpandLayout>
+    </com.yc.expandlib.ExpandLayout>
 
 
     <Button
