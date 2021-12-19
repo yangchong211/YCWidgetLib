@@ -23,7 +23,8 @@
 ### 03.如何使用
 - **如何引用**
     ```
-     implementation 'cn.yc:ExpandLib:1.0.1'
+    implementation 'com.github.yangchong211.YCExpandView:ExpandLib:1.0.3'
+    implementation 'com.github.yangchong211.YCExpandView:ExpandPager:1.0.3'
     ```
 
 #### 3.1 使用万能伸展折叠控件
