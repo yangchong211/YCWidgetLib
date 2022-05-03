@@ -3,6 +3,7 @@
 - 02.万能伸展折叠控件
 - 03.自定义小红点
 - 04.多种阴影效果实践
+- 05.自定义圆角控件
 
 
 ### 01.该库介绍
@@ -17,7 +18,7 @@
     - 可以支持支持常见的文本折叠，流失布局标签折叠，或者RecyclerView折叠等功能。十分方便，思路也比较容易理解，代码不超过300行……
 - **如何引用**
     ```
-    implementation 'com.github.yangchong211.YCExpandView:ExpandPager:1.0.3'
+    implementation 'com.github.yangchong211.YCWidgetLib:ExpandLib:1.0.4'
     ```
 - 具体使用可看：
     - [万能伸展折叠控件](https://github.com/yangchong211/YCWidgetLib/tree/master/ExpandLib)
@@ -32,7 +33,7 @@
     - 大概的原理是：继承TextView，然后设置LayoutParams，设置内容，设置Background等等属性，然后在通过addView添加到父控件中。
 - **如何引用**
     ```
-    
+    implementation 'com.github.yangchong211.YCWidgetLib:RedDotView:1.0.4'
     ```
 - 具体使用可看：
     - [自定义小红点](https://github.com/yangchong211/YCWidgetLib/tree/master/RedDotView)
@@ -52,14 +53,26 @@
     - 第四种方案采用api实现阴影效果，支持多种自定义效果，方便调用，目前来说应该比较友好
 - **如何引用**
     ```
-    
+    implementation 'com.github.yangchong211.YCWidgetLib:ShadowConfig:1.0.4'
+    implementation 'com.github.yangchong211.YCWidgetLib:CardViewLib:1.0.4'
     ```
 - 具体使用可看：
     - [多种阴影效果实践](https://github.com/yangchong211/YCWidgetLib/tree/master/CardViewLib)
 
 
 
-
+### 05.自定义圆角控件
+- 自定义小红点介绍
+    - 自定义红点控件，不用修改之前的代码，完全解耦，既可以设置红点数字控件，使用十分方便。
+    - 网上看到有些案例是继承View，然后去测量和绘制红点的相关操作，此案例则不需要这样，继承TextView也可以完成设置红点功能。
+    - 可以支持设置在TextView，Button，LinearLayout，RelativeLayout，TabLayout等等控件上……
+    - 大概的原理是：继承TextView，然后设置LayoutParams，设置内容，设置Background等等属性，然后在通过addView添加到父控件中。
+- **如何引用**
+    ```
+    implementation 'com.github.yangchong211.YCWidgetLib:RedDotView:1.0.4'
+    ```
+- 具体使用可看：
+    - [自定义圆角控件](https://github.com/yangchong211/YCWidgetLib/tree/master/RoundCorners)
 
 
 

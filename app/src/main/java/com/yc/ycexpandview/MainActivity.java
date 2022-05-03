@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.yc.expandlib.ExpandLogUtils;
+import com.yc.ycexpandview.corner.CornerActivity;
 import com.yc.ycexpandview.pager.PagerActivity;
 import com.yc.ycexpandview.red.RedViewActivity;
 import com.yc.ycexpandview.shadow.first.FirstActivity;
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, SecondActivity.class));
                 break;
             case R.id.tv_8:
+                startActivity(new Intent(this, CornerActivity.class));
                 break;
             default:
                 break;

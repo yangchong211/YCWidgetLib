@@ -11,8 +11,6 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 
-
-
 /**
  * <pre>
  *     @author yangchong
@@ -59,8 +57,8 @@ public class ExpandLayout extends LinearLayout {
     }
 
     /**
-     * @param ev        触摸事件
-     * @return          执行动画的过程中屏蔽事件传递
+     * @param ev 触摸事件
+     * @return 执行动画的过程中屏蔽事件传递
      */
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
@@ -76,17 +74,19 @@ public class ExpandLayout extends LinearLayout {
 
     /**
      * 初始化操作
-     * @param isExpand                  初始状态是否折叠
-     * @param expandHeight              折叠时高度
+     *
+     * @param isExpand     初始状态是否折叠
+     * @param expandHeight 折叠时高度
      */
-    public void initExpand(boolean isExpand , int expandHeight) {
+    public void initExpand(boolean isExpand, int expandHeight) {
         this.isExpand = isExpand;
         setViewDimensions(expandHeight);
     }
 
     /**
      * 设置动画时间，暴露给外部调用
-     * @param animationDuration          动画时间
+     *
+     * @param animationDuration 动画时间
      */
     public void setAnimationDuration(long animationDuration) {
         this.animationDuration = animationDuration;
@@ -103,7 +103,7 @@ public class ExpandLayout extends LinearLayout {
             public void run() {
                 int measuredHeight = childAt.getMeasuredHeight();
                 viewHeight = layoutView.getMeasuredHeight();
-                ExpandLogUtils.d("获取内容布局"+viewHeight+"-----"+expandHeight+"----"+measuredHeight);
+                ExpandLogUtils.d("获取内容布局" + viewHeight + "-----" + expandHeight + "----" + measuredHeight);
                 setViewHeight(layoutView, isExpand ? viewHeight : expandHeight);
             }
         });
@@ -129,8 +129,9 @@ public class ExpandLayout extends LinearLayout {
 
     /**
      * 设置view的高度
-     * @param view                      view
-     * @param height                    height
+     *
+     * @param view   view
+     * @param height height
      */
     private void setViewHeight(View view, int height) {
         final ViewGroup.LayoutParams params = view.getLayoutParams();
@@ -143,15 +144,15 @@ public class ExpandLayout extends LinearLayout {
      * 切换动画实现
      */
     private void animateToggle(long animationDuration) {
-        if (expandHeight==0){
+        if (expandHeight == 0) {
             throw new NullPointerException("u should init expand first");
         }
         clearAnim();
-        if (isExpand){
-            ExpandLogUtils.d("切换动画实现"+viewHeight+"-----"+expandHeight+"----折叠");
+        if (isExpand) {
+            ExpandLogUtils.d("切换动画实现" + viewHeight + "-----" + expandHeight + "----折叠");
             animation = ValueAnimator.ofFloat(expandHeight, viewHeight);
-        }else {
-            ExpandLogUtils.d("切换动画实现"+viewHeight+"-----"+expandHeight+"----展开");
+        } else {
+            ExpandLogUtils.d("切换动画实现" + viewHeight + "-----" + expandHeight + "----展开");
             animation = ValueAnimator.ofFloat(viewHeight, expandHeight);
         }
         animation.setDuration(animationDuration);
@@ -160,7 +161,7 @@ public class ExpandLayout extends LinearLayout {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 int value = (int) (float) animation.getAnimatedValue();
-                ExpandLogUtils.d("onAnimationUpdate----"+"-----"+value);
+                ExpandLogUtils.d("onAnimationUpdate----" + "-----" + value);
                 setViewHeight(layoutView, value);
                 /*if (value == viewHeight || value == 0) {
                     lock = false;
@@ -178,7 +179,7 @@ public class ExpandLayout extends LinearLayout {
             public void onAnimationCancel(Animator animation) {
                 super.onAnimationCancel(animation);
                 isAnimate = false;
-                if (listener!=null){
+                if (listener != null) {
                     listener.onToggleExpand(isExpand);
                     lock = false;
                 }
@@ -188,7 +189,7 @@ public class ExpandLayout extends LinearLayout {
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
                 isAnimate = false;
-                if (listener!=null){
+                if (listener != null) {
                     listener.onToggleExpand(isExpand);
                     lock = false;
                 }
@@ -201,8 +202,8 @@ public class ExpandLayout extends LinearLayout {
     /**
      * 清除动画资源
      */
-    private void clearAnim(){
-        if (animation!=null){
+    private void clearAnim() {
+        if (animation != null) {
             animation.cancel();
             animation = null;
         }
@@ -210,7 +211,8 @@ public class ExpandLayout extends LinearLayout {
 
     /**
      * 查看控件是折叠还是展开状态
-     * @return                          true表示展开
+     *
+     * @return true表示展开
      */
     public boolean isExpand() {
         return isExpand;
@@ -246,10 +248,11 @@ public class ExpandLayout extends LinearLayout {
         }
     }
 
-    public interface OnToggleExpandListener{
+    public interface OnToggleExpandListener {
         /**
          * 折叠或者展开操作后的监听
-         * @param isExpand                      控件是折叠还是展开状态
+         *
+         * @param isExpand 控件是折叠还是展开状态
          */
         void onToggleExpand(boolean isExpand);
     }
@@ -258,9 +261,10 @@ public class ExpandLayout extends LinearLayout {
 
     /**
      * 设置折叠和展开的监听listener事件
-     * @param listener                  listener
+     *
+     * @param listener listener
      */
-    public void setOnToggleExpandListener(OnToggleExpandListener listener){
+    public void setOnToggleExpandListener(OnToggleExpandListener listener) {
         this.listener = listener;
     }
 

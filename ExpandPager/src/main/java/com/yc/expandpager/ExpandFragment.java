@@ -17,7 +17,7 @@ import androidx.fragment.app.Fragment;
 /**
  * @author: 杨充
  * @email : yangchong211@163.com
- * @blog  : https://github.com/yangchong211/YCWidgetLib
+ * @blog : https://github.com/yangchong211/YCWidgetLib
  * @time : 2018/06/11
  * @desc : 折叠fragment
  * @revise :

@@ -74,15 +74,16 @@ public class ShadowView extends ViewGroup {
 
     public ShadowView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(context,attrs,defStyleAttr);
+        init(context, attrs, defStyleAttr);
         initPaint();
     }
 
     /**
      * 初始化自定义的attr属性
-     * @param context                       context
-     * @param attrs                         attrs
-     * @param defStyleAttr                  defStyleAttr
+     *
+     * @param context      context
+     * @param attrs        attrs
+     * @param defStyleAttr defStyleAttr
      */
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
         TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.ShadowView,
@@ -196,7 +197,7 @@ public class ShadowView extends ViewGroup {
         setMeasuredDimension(View.resolveSizeAndState(maxWidth, shadowMeasureWidthMatchParent ?
                         widthMeasureSpec : widthSpec, childState),
                 View.resolveSizeAndState(maxHeight, shadowMeasureHeightMatchParent ?
-                        heightMeasureSpec : heightSpec,
+                                heightMeasureSpec : heightSpec,
                         childState << View.MEASURED_HEIGHT_STATE_SHIFT));
     }
 
@@ -458,7 +459,8 @@ public class ShadowView extends ViewGroup {
 
     /**
      * 获取阴影的颜色
-     * @return                          int
+     *
+     * @return int
      */
     public int getShadowColor() {
         return shadowColor;
@@ -466,7 +468,8 @@ public class ShadowView extends ViewGroup {
 
     /**
      * 设置阴影的颜色
-     * @param shadowColor               颜色，这里需要用注解限定一下
+     *
+     * @param shadowColor 颜色，这里需要用注解限定一下
      */
     public void setShadowColor(@ColorInt int shadowColor) {
         this.shadowColor = shadowColor;
@@ -475,6 +478,7 @@ public class ShadowView extends ViewGroup {
 
     /**
      * 获取foreground的颜色
+     *
      * @return
      */
     public int getForegroundColor() {
@@ -483,7 +487,8 @@ public class ShadowView extends ViewGroup {
 
     /**
      * 设置foreground颜色
-     * @param foregroundColor           颜色
+     *
+     * @param foregroundColor 颜色
      */
     public void setForegroundColor(@ColorInt int foregroundColor) {
         this.foregroundColor = foregroundColor;

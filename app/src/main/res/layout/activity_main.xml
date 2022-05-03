@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
         android:padding="10dp"
-        android:text="1.左右可以滑动的卡片效果"/>
+        android:text="6.左右可以滑动的卡片效果"/>
 
     <TextView
         android:id="@+id/tv_7"
@@ -71,7 +71,7 @@
         android:background="@color/colorAccent"
         android:layout_marginTop="10dp"
         android:padding="10dp"
-        android:text="2.自定义背景的视图"/>
+        android:text="7.自定义背景的视图"/>
 
     <TextView
         android:id="@+id/tv_8"
@@ -80,7 +80,7 @@
         android:background="@color/colorAccent"
         android:layout_marginTop="10dp"
         android:padding="10dp"
-        android:text=""/>
+        android:text="8.自定义圆角控件视图"/>
 
 
 </LinearLayout>

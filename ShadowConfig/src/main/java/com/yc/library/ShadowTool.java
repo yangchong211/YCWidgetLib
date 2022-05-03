@@ -10,7 +10,7 @@ import androidx.core.view.ViewCompat;
 public final class ShadowTool {
 
     public static void setShadowBgForView(View view, ShadowConfig config) {
-        if (view==null || config==null){
+        if (view == null || config == null) {
             return;
         }
         //关闭硬件加速

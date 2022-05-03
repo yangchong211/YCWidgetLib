@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yc.roundcorner.viewgroup.RoundLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:rRadius="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <com.yc.roundcorner.view.CircleImageView
+                android:id="@+id/civ"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/image4"
+                app:rStrokeColor="@color/cardview_dark_background"
+                app:rStrokeWidth="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="CircleImageView"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <com.yc.roundcorner.view.RoundImageView
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image4"
+                app:rRadius="30dp"
+                app:rStrokeColor="#33000000"
+                app:rStrokeWidth="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="RoundImageView"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <com.yc.roundcorner.view.RoundTextView
+                android:id="@+id/tv"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="40dp"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="Hello!"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                app:rLeftRadius="50dp"
+                app:rRightRadius="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="RoundTextView"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <com.yc.roundcorner.view.RoundButton
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="40dp"
+                android:background="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:text="Hello!"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                app:rLeftRadius="20dp"
+                app:rRightRadius="30dp"
+                app:rStrokeColor="@android:color/holo_green_dark"
+                app:rStrokeWidth="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="RoundButton"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <com.yc.roundcorner.view.RoundView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="40dp"
+                android:background="@android:color/holo_red_dark"
+                app:rBottomLeftRadius="20dp"
+                app:rBottomRightRadius="50dp"
+                app:rTopLeftRadius="50dp"
+                app:rTopRightRadius="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="RoundView"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <com.yc.roundcorner.viewgroup.RoundLinearLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                app:rLeftRadius="30dp"
+                app:rStrokeColor="@android:color/darker_gray"
+                app:rStrokeWidth="5dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_dark" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_blue_dark" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_dark" />
+            </com.yc.roundcorner.viewgroup.RoundLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="RoundLinearLayout"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <com.yc.roundcorner.viewgroup.RoundRelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="40dp"
+                app:rRightRadius="30dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_blue_dark" />
+            </com.yc.roundcorner.viewgroup.RoundRelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="RoundRelativeLayout"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <com.yc.roundcorner.viewgroup.RoundFrameLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="40dp"
+                app:rBottomLeftRadius="30dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_dark" />
+            </com.yc.roundcorner.viewgroup.RoundFrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="RoundFrameLayout"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</com.yc.roundcorner.viewgroup.RoundLinearLayout>

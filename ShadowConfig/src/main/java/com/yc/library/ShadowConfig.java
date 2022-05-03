@@ -1,6 +1,7 @@
 package com.yc.library;
 
 import android.graphics.LinearGradient;
+
 import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 

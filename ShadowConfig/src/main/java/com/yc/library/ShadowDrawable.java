@@ -97,7 +97,7 @@ public class ShadowDrawable extends Drawable {
                     && mGradientPositions.length == mGradientColorArray.length;
             mPaint.setShader(mLinearGradient == null ?
                     new LinearGradient(mRectF.left, 0, mRectF.right, 0, mGradientColorArray,
-                    isGradientPositions ? mGradientPositions : null, Shader.TileMode.CLAMP) : mLinearGradient);
+                            isGradientPositions ? mGradientPositions : null, Shader.TileMode.CLAMP) : mLinearGradient);
         } else {
             mPaint.setColor(mColor);
         }
