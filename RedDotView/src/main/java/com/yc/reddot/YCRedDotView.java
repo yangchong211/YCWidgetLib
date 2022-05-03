@@ -36,7 +36,14 @@ import androidx.appcompat.widget.AppCompatTextView;
 
 import com.google.android.material.tabs.TabLayout;
 
-
+/**
+ * @author: 杨充
+ * @email : yangchong211@163.com
+ * @blog : https://github.com/yangchong211/YCWidgetLib
+ * @time : 2017/05/13
+ * @desc : 自定义红点视图，用在清科公司投资界，新芽；以及大搜车多个项目中
+ * @revise :
+ */
 public class YCRedDotView extends AppCompatTextView {
 
     /**
