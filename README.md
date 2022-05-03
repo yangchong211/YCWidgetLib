@@ -1,132 +1,67 @@
 # YCExpandView
 - 01.该库介绍
-- 02.效果展示
-- 03.如何使用
-- 04.注意要点
-- 05.优化问题
-- 06.部分代码逻辑
+- 02.万能伸展折叠控件
+- 03.自定义小红点
+- 04.多种阴影效果实践
 
 
 ### 01.该库介绍
-- 自定义折叠和展开布局，在不用改变原控件的基础上，就可以实现折叠展开功能，入侵性极低。
-- 主要的思路是，设置一个折叠时的布局高度，设置一个内容展开时的高度，然后利用属性动画去动态改变布局的高度。
-- 可以设置折叠和展开的监听事件，方便开发者拓展其他需求。可以设置动画的时间。
-- 可以支持支持常见的文本折叠，流失布局标签折叠，或者RecyclerView折叠等功能。十分方便，思路也比较容易理解，代码不超过300行……
 
 
-### 02.效果展示
-- ![expand1.gif](https://upload-images.jianshu.io/upload_images/4432347-92b56b4b5c1d67e2.gif?imageMogr2/auto-orient/strip)
-- ![expand2.gif](https://upload-images.jianshu.io/upload_images/4432347-4a0c800016ae563d.gif?imageMogr2/auto-orient/strip)
-
-
-
-### 03.如何使用
+### 02.万能伸展折叠控件
+- 伸展折叠控件介绍
+    - 自定义折叠和展开布局，在不用改变原控件的基础上，就可以实现折叠展开功能，入侵性极低。
+    - 主要的思路是，设置一个折叠时的布局高度，设置一个内容展开时的高度，然后利用属性动画去动态改变布局的高度。
+    - 可以设置折叠和展开的监听事件，方便开发者拓展其他需求。可以设置动画的时间。
+    - 可以支持支持常见的文本折叠，流失布局标签折叠，或者RecyclerView折叠等功能。十分方便，思路也比较容易理解，代码不超过300行……
 - **如何引用**
     ```
-    implementation 'com.github.yangchong211.YCExpandView:ExpandLib:1.0.3'
     implementation 'com.github.yangchong211.YCExpandView:ExpandPager:1.0.3'
     ```
+- 具体使用可看：
+    - [万能伸展折叠控件]()
 
-#### 3.1 使用万能伸展折叠控件
-- 设置文本控件
+
+
+### 03.自定义小红点
+- 自定义小红点介绍
+    - 自定义红点控件，不用修改之前的代码，完全解耦，既可以设置红点数字控件，使用十分方便。
+    - 网上看到有些案例是继承View，然后去测量和绘制红点的相关操作，此案例则不需要这样，继承TextView也可以完成设置红点功能。
+    - 可以支持设置在TextView，Button，LinearLayout，RelativeLayout，TabLayout等等控件上……
+    - 大概的原理是：继承TextView，然后设置LayoutParams，设置内容，设置Background等等属性，然后在通过addView添加到父控件中。
+- **如何引用**
     ```
-    <com.ycbjie.expandlib.ExpandLayout
-        android:id="@+id/expand"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/tv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text=""/>
-    </com.ycbjie.expandlib.ExpandLayout>
+    
     ```
-- 如何切换展开和折叠
+- 具体使用可看：
+    - [自定义小红点]()
+
+
+
+### 04.多种阴影效果实践
+- 阴影效果有哪些实现方式
+    - 第一种：使用CardView，但是不能设置阴影颜色
+    - 第二种：采用shape叠加，存在后期UI效果不便优化
+    - 第三种：UI切图
+    - 第四种：自定义View
+- 方案对比
+    - 第一个方案的CardView渐变色和阴影效果很难控制，只能支持线性或者环装形式渐变，这种不满足需要，因为阴影本身是一个四周一层很淡的颜色包围，在一个矩形框的层面上颜色大概一致，而且这个CardView有很多局限性，比如不能修改阴影的颜色，不能修改阴影的深浅。所以这个思路无法实现这个需求。
+    - 第二个采用shape叠加，可以实现阴影效果，但是影响UI，且阴影部分是占像素的，而且不灵活。
+    - 第三个方案询问了一下ui。他们给出的结果是如果使用切图的话那标注的话很难标，身为一个优秀的设计师大多对像素点都和敏感，界面上的像素点有一点不协调那都是无法容忍的。
+    - 第四种方案采用api实现阴影效果，支持多种自定义效果，方便调用，目前来说应该比较友好
+- **如何引用**
     ```
-    //初始化操作
-    expand.initExpand(false ,mHeight);
-    //设置动画时间
-    expand.setAnimationDuration(300);
-    //折叠或者展开操作后的监听
-    expand.setOnToggleExpandListener(new ExpandLayout.OnToggleExpandListener() {
-        @Override
-        public void onToggleExpand(boolean isExpand) {
-            if (isExpand){
-                ivExpand.setBackgroundResource(R.mipmap.icon_btn_collapse);
-            }else {
-                ivExpand.setBackgroundResource(R.mipmap.icon_btn_expand);
-            }
-        }
-    });
-    //折叠view
-    expand.collapse();
-    //展开view
-    expand.expand();
-    //查看控件是折叠还是展开状态
-    expand.isExpand();
-    //这个是置反操作
-    expand.toggleExpand();
+    
     ```
-
-#### 3.2 使用自定义折叠文本
-- 设置文本控件
-    ```
-    <com.ycbjie.expandlib.FolderTextView
-        android:id="@+id/tv_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""/>
-    ```
-- 属性设置
-    ```
-    //设置折叠行数
-    tv_view.setFoldLine(3);
-    //设置展开时的link文本
-    tv_view.setFoldText("收起文本");
-    //设置收缩时link文本
-    tv_view.setUnfoldText("查看详情");
-    //设置link的颜色
-    tv_view.setLinkColor(getResources().getColor(R.color.colorPrimary));
-    ```
-
-
-### 04.注意要点
-
-
-
-### 05.优化问题
-- 1.在从折叠状态到伸展状态，或者反之。只要是在动画过程中，则执行动画的过程中屏蔽事件传递
-- 2.当控件销毁后，在onDetachedFromWindow方法中，手动销毁动画
-- 3.针对折叠和伸展状态之间切换，如果动画在执行中，即使调用多次toggleExpand()方法，避免频繁调用collapse或者expand
-- 4.如果开发者使用该折叠控件时，设置折叠时的高度为0，则会抛出异常
-- 5.针对自定义折叠文本，仅仅用一个TextView即可搞定，充分利用SpannableString的功能即可实现你的需求
+- 具体使用可看：
+    - [多种阴影效果实践]()
 
 
 
 
-### 其他介绍
-#### 01.关于博客汇总链接
-- 1.[技术博客汇总](https://www.jianshu.com/p/614cb839182c)
-- 2.[开源项目汇总](https://blog.csdn.net/m0_37700275/article/details/80863574)
-- 3.[生活博客汇总](https://blog.csdn.net/m0_37700275/article/details/79832978)
-- 4.[喜马拉雅音频汇总](https://www.jianshu.com/p/f665de16d1eb)
-- 5.[其他汇总](https://www.jianshu.com/p/53017c3fc75d)
 
 
 
-#### 02.关于我的博客
-- github：https://github.com/yangchong211
-- 知乎：https://www.zhihu.com/people/yczbj/activities
-- 简书：http://www.jianshu.com/u/b7b2c6ed9284
-- csdn：http://my.csdn.net/m0_37700275
-- 喜马拉雅听书：http://www.ximalaya.com/zhubo/71989305/
-- 开源中国：https://my.oschina.net/zbj1618/blog
-- 泡在网上的日子：http://www.jcodecraeer.com/member/content_list.php?channelid=1
-- 邮箱：yangchong211@163.com
-- 阿里云博客：https://yq.aliyun.com/users/article?spm=5176.100- 239.headeruserinfo.3.dT4bcV
-- segmentfault头条：https://segmentfault.com/u/xiangjianyu/articles
-- 掘金：https://juejin.im/user/5939433efe88c2006afa0c6e
 
 
 

@@ -2,7 +2,7 @@ package com.yc.expandlib;
 
 import android.util.Log;
 
-public final class LogUtils {
+public final class ExpandLogUtils {
 
     private static boolean isLog = false;
 
@@ -11,7 +11,7 @@ public final class LogUtils {
     }
 
     public static void setIsLog(boolean isLog) {
-        LogUtils.isLog = isLog;
+        ExpandLogUtils.isLog = isLog;
     }
 
     public static void d(String log){

@@ -14,7 +14,7 @@
         android:id="@+id/tv_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:padding="10dp"
         android:text="1.文本控件折叠效果"/>
 
@@ -24,7 +24,7 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:padding="10dp"
         android:text="2.文本控件折叠效果，伸展后不折叠"/>
 
@@ -33,7 +33,7 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:padding="10dp"
         android:text="3.流式布局的折叠效果"/>
 
@@ -42,8 +42,45 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:padding="10dp"
         android:text="4.Pager的折叠效果"/>
+
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:text="5.自定义多功能小红点"/>
+
+    <TextView
+        android:id="@+id/tv_6"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:text="1.左右可以滑动的卡片效果"/>
+
+    <TextView
+        android:id="@+id/tv_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="2.自定义背景的视图"/>
+
+    <TextView
+        android:id="@+id/tv_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text=""/>
+
 
 </LinearLayout>

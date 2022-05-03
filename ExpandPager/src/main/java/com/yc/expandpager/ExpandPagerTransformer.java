@@ -5,7 +5,14 @@ import android.view.View;
 
 import androidx.viewpager.widget.ViewPager;
 
-
+/**
+ * @author: 杨充
+ * @email : yangchong211@163.com
+ * @blog  : https://github.com/yangchong211/YCWidgetLib
+ * @time : 2018/06/11
+ * @desc : 转化
+ * @revise :
+ */
 public class ExpandPagerTransformer implements ViewPager.PageTransformer {
 
     public static final float MAX_SCALE = 0.9f;

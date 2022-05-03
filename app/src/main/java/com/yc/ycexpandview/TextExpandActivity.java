@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.yc.expandlib.ExpandLayout;
 import com.yc.expandlib.FolderTextView;
-import com.yc.expandlib.LogUtils;
+import com.yc.expandlib.ExpandLogUtils;
 
 /**
  * @author yc
@@ -94,7 +94,7 @@ public class TextExpandActivity extends AppCompatActivity {
         llTagBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LogUtils.d("点击事件");
+                ExpandLogUtils.d("点击事件");
                 expand.toggleExpand();
             }
         });
@@ -118,7 +118,7 @@ public class TextExpandActivity extends AppCompatActivity {
             @Override
             public void run() {
                 measuredHeight = tv.getMeasuredHeight();
-                LogUtils.d("flowView--获取内容布局---" + measuredHeight);
+                ExpandLogUtils.d("flowView--获取内容布局---" + measuredHeight);
                 handler.sendEmptyMessage(TAG_LAYOUT_FINISH);
             }
         });

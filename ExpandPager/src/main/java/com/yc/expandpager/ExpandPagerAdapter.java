@@ -9,7 +9,14 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import java.lang.ref.WeakReference;
 
-
+/**
+ * @author: 杨充
+ * @email : yangchong211@163.com
+ * @blog  : https://github.com/yangchong211/YCWidgetLib
+ * @time : 2018/06/11
+ * @desc : adapter
+ * @revise :
+ */
 public abstract class ExpandPagerAdapter extends FragmentStatePagerAdapter {
 
     private WeakReference<Fragment> currentFragmentReference;

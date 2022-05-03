@@ -15,7 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.yc.expandlib.ExpandLayout;
-import com.yc.expandlib.LogUtils;
+import com.yc.expandlib.ExpandLogUtils;
 import com.zhy.view.flowlayout.FlowLayout;
 import com.zhy.view.flowlayout.TagAdapter;
 import com.zhy.view.flowlayout.TagFlowLayout;
@@ -107,7 +107,7 @@ public class TextExpandActivity3 extends AppCompatActivity {
         llTagBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LogUtils.d("点击事件");
+                ExpandLogUtils.d("点击事件");
                 expand.toggleExpand();
             }
         });
@@ -131,7 +131,7 @@ public class TextExpandActivity3 extends AppCompatActivity {
             @Override
             public void run() {
                 measuredHeight = flowLayout.getMeasuredHeight();
-                LogUtils.d("flowView--获取内容布局---" + measuredHeight);
+                ExpandLogUtils.d("flowView--获取内容布局---" + measuredHeight);
                 handler.sendEmptyMessage(TAG_LAYOUT_FINISH);
             }
         });

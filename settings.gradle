@@ -1,2 +1,5 @@
 include ':app', ':ExpandLib'
 include ':ExpandPager'
+include ':RedDotView'
+include ':CardViewLib'
+include ':ShadowConfig'

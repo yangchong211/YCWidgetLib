@@ -23,6 +23,12 @@
         <activity android:name="com.yc.ycexpandview.TextExpandActivity3"/>
         <activity android:name="com.yc.ycexpandview.pager.PagerActivity"/>
         <activity android:name="com.yc.ycexpandview.pager.InfoActivity"/>
+        <activity android:name=".red.RedViewActivity"/>
+        <activity android:name=".shadow.first.FirstActivity"/>
+        <activity android:name=".shadow.second.SecondActivity"/>
+        <activity android:name=".shadow.second.ShadowViewActivity"/>
+        <activity android:name=".shadow.second.ShadowViewDemo3Activity"/>
+        <activity android:name=".shadow.second.CardViewActivity"/>
     </application>
 
 </manifest>

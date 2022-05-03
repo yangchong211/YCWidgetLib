@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 /**
  * <pre>
  *     @author yangchong
- *     blog  : https://github.com/yangchong211/LifeHelper
+ *     blog  : https://github.com/yangchong211/YCWidgetLib
  *     time  : 2019/04/24
  *     desc  : 自定义折叠布局
  *     revise:
@@ -103,7 +103,7 @@ public class ExpandLayout extends LinearLayout {
             public void run() {
                 int measuredHeight = childAt.getMeasuredHeight();
                 viewHeight = layoutView.getMeasuredHeight();
-                LogUtils.d("获取内容布局"+viewHeight+"-----"+expandHeight+"----"+measuredHeight);
+                ExpandLogUtils.d("获取内容布局"+viewHeight+"-----"+expandHeight+"----"+measuredHeight);
                 setViewHeight(layoutView, isExpand ? viewHeight : expandHeight);
             }
         });
@@ -148,10 +148,10 @@ public class ExpandLayout extends LinearLayout {
         }
         clearAnim();
         if (isExpand){
-            LogUtils.d("切换动画实现"+viewHeight+"-----"+expandHeight+"----折叠");
+            ExpandLogUtils.d("切换动画实现"+viewHeight+"-----"+expandHeight+"----折叠");
             animation = ValueAnimator.ofFloat(expandHeight, viewHeight);
         }else {
-            LogUtils.d("切换动画实现"+viewHeight+"-----"+expandHeight+"----展开");
+            ExpandLogUtils.d("切换动画实现"+viewHeight+"-----"+expandHeight+"----展开");
             animation = ValueAnimator.ofFloat(viewHeight, expandHeight);
         }
         animation.setDuration(animationDuration);
@@ -160,7 +160,7 @@ public class ExpandLayout extends LinearLayout {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 int value = (int) (float) animation.getAnimatedValue();
-                LogUtils.d("onAnimationUpdate----"+"-----"+value);
+                ExpandLogUtils.d("onAnimationUpdate----"+"-----"+value);
                 setViewHeight(layoutView, value);
                 /*if (value == viewHeight || value == 0) {
                     lock = false;

@@ -22,7 +22,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 /**
  * <pre>
  *     @author yangchong
- *     blog  : https://github.com/yangchong211/LifeHelper
+ *     blog  : https://github.com/yangchong211/YCWidgetLib
  *     time  : 2019/10/24
  *     desc  : 自定义折叠文本
  *     revise:

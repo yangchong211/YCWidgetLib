@@ -7,6 +7,14 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 
+/**
+ * @author: 杨充
+ * @email : yangchong211@163.com
+ * @blog  : https://github.com/yangchong211/YCWidgetLib
+ * @time : 2018/06/11
+ * @desc : pager工厂类
+ * @revise :
+ */
 public final class ExpandPagerFactory {
 
     public static ExpandFragment getCurrentFragment(ViewPager viewPager){

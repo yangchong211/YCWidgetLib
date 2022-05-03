@@ -14,6 +14,14 @@ import androidx.cardview.widget.CardView;
 import androidx.core.view.ViewCompat;
 import androidx.fragment.app.Fragment;
 
+/**
+ * @author: 杨充
+ * @email : yangchong211@163.com
+ * @blog  : https://github.com/yangchong211/YCWidgetLib
+ * @time : 2018/06/11
+ * @desc : 折叠fragment
+ * @revise :
+ */
 public abstract class ExpandFragment extends Fragment {
 
     private static final float SCALE_OPENED = 1.2f;

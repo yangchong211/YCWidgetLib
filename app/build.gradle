@@ -1,14 +1,15 @@
 apply plugin: 'com.android.application'
+apply from: rootProject.projectDir.absolutePath + "/yc.gradle"
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    //buildToolsVersion rootProject.ext.android["buildToolsVersion"]
     defaultConfig {
         applicationId "com.ycbjie.ycexpandview"
-        minSdkVersion 17
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
     }
     buildTypes {
         release {
@@ -20,11 +21,18 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.cardview:cardview:1.0.0'
-//    implementation  project(':ExpandLib')
-//    implementation  project(':ExpandPager')
-    implementation 'com.github.yangchong211.YCExpandView:ExpandLib:1.0.3'
-    implementation 'com.github.yangchong211.YCExpandView:ExpandPager:1.0.3'
+    implementation(rootProject.ext.dependencies["appcompat"])
+    implementation(rootProject.ext.dependencies["annotation"])
+    implementation(rootProject.ext.dependencies["cardview"])
+    implementation(rootProject.ext.dependencies["material"])
+    implementation(rootProject.ext.dependencies["constraintlayout"])
+    implementation "com.google.android:flexbox:0.3.0"
+    implementation  project(':ExpandLib')
+    implementation  project(':ExpandPager')
+    implementation  project(':RedDotView')
+    implementation  project(':CardViewLib')
+    implementation  project(':ShadowConfig')
+    //implementation 'com.github.yangchong211.YCExpandView:ExpandLib:1.0.3'
+    //implementation 'com.github.yangchong211.YCExpandView:ExpandPager:1.0.3'
     implementation 'com.hyman:flowlayout-lib:1.1.2'
 }
