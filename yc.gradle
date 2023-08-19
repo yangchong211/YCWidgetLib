@@ -105,12 +105,12 @@ ext {
 
             //widget库
             //https://github.com/yangchong211/YCWidgetLib
-            "ShadowConfig"            : "com.github.yangchong211.YCWidgetLib:ShadowConfig:1.0.5",
-            "RedDotView"              : "com.github.yangchong211.YCWidgetLib:RedDotView:1.0.5",
-            "ExpandPager"             : "com.github.yangchong211.YCWidgetLib:ExpandPager:1.0.5",
-            "ExpandLib"               : "com.github.yangchong211.YCWidgetLib:ExpandLib:1.0.5",
-            "CardViewLib"             : "com.github.yangchong211.YCWidgetLib:CardViewLib:1.0.5",
-            "RoundCorners"            : "com.github.yangchong211.YCWidgetLib:RoundCorners:1.0.5",
+            "ShadowConfig"            : "com.github.yangchong211.YCWidgetLib:ShadowConfig:1.0.6",
+            "RedDotView"              : "com.github.yangchong211.YCWidgetLib:RedDotView:1.0.6",
+            "ExpandPager"             : "com.github.yangchong211.YCWidgetLib:ExpandPager:1.0.6",
+            "ExpandLib"               : "com.github.yangchong211.YCWidgetLib:ExpandLib:1.0.6",
+            "CardViewLib"             : "com.github.yangchong211.YCWidgetLib:CardViewLib:1.0.6",
+            "RoundCorners"            : "com.github.yangchong211.YCWidgetLib:RoundCorners:1.0.6",
 
             //线程池
             //https://github.com/yangchong211/YCThreadPool

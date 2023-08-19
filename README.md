@@ -20,7 +20,7 @@
     - 可以支持支持常见的文本折叠，流失布局标签折叠，或者RecyclerView折叠等功能。十分方便，思路也比较容易理解，代码不超过300行……
 - **如何引用**
     ```
-    implementation 'com.github.yangchong211.YCWidgetLib:ExpandLib:1.0.5'
+    implementation 'com.github.yangchong211.YCWidgetLib:ExpandLib:1.0.6'
     ```
 - 具体使用可看：
     - [万能伸展折叠控件](https://github.com/yangchong211/YCWidgetLib/tree/master/ExpandLib)
@@ -35,7 +35,7 @@
     - 大概的原理是：继承TextView，然后设置LayoutParams，设置内容，设置Background等等属性，然后在通过addView添加到父控件中。
 - **如何引用**
     ```
-    implementation 'com.github.yangchong211.YCWidgetLib:RedDotView:1.0.5'
+    implementation 'com.github.yangchong211.YCWidgetLib:RedDotView:1.0.6'
     ```
 - 具体使用可看：
     - [自定义小红点](https://github.com/yangchong211/YCWidgetLib/tree/master/RedDotView)
@@ -55,8 +55,8 @@
     - 第四种方案采用api实现阴影效果，支持多种自定义效果，方便调用，目前来说应该比较友好
 - **如何引用**
     ```
-    implementation 'com.github.yangchong211.YCWidgetLib:ShadowConfig:1.0.5'
-    implementation 'com.github.yangchong211.YCWidgetLib:CardViewLib:1.0.5'
+    implementation 'com.github.yangchong211.YCWidgetLib:ShadowConfig:1.0.6'
+    implementation 'com.github.yangchong211.YCWidgetLib:CardViewLib:1.0.6'
     ```
 - 具体使用可看：
     - [多种阴影效果实践](https://github.com/yangchong211/YCWidgetLib/tree/master/CardViewLib)
@@ -85,7 +85,7 @@
     - 针对View类型：RoundView；RoundTextView；RoundImageView；RoundButton；CircleImageView
 - **如何引用**
     ```
-    implementation 'com.github.yangchong211.YCWidgetLib:RoundCorners:1.0.5'
+    implementation 'com.github.yangchong211.YCWidgetLib:RoundCorners:1.0.6'
     ```
 - 具体使用可看：
     - [自定义圆角控件](https://github.com/yangchong211/YCWidgetLib/tree/master/RoundCorners)
